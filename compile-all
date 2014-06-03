@@ -1,5 +1,7 @@
 cd en
+rm build/ -r
 make html
 cd ..
 cd ru
+rm build/ -r
 make html
