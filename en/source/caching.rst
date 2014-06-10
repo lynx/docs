@@ -17,3 +17,32 @@ Example:
 
 	$configuration = new Configuration();
 	$configuration->setCacheDriver(new NativeArray());
+
+NativeArray
+-----------
+
+.. code-block:: php
+
+	use Lynx\Cache\NativeArray;
+	$configuration->setCacheDriver(new NativeArray());
+
+Memcache
+--------
+
+.. code-block:: php
+
+	use Lynx\Cache\NativeArray;
+	$configuration->setCacheDriver(new Memcache());
+
+Memcached
+---------
+
+.. code-block:: php
+
+	use Lynx\Cache\NativeArray;
+	$configuration->setCacheDriver(new Memcached());
+
+
+
+
+
