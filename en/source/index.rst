@@ -12,4 +12,5 @@ Contents:
    :maxdepth: 3
 
    install
+   querybuilder
    caching
