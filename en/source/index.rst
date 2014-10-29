@@ -12,5 +12,6 @@ Contents:
    :maxdepth: 3
 
    install
+   repository
    querybuilder
    caching
