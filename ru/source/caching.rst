@@ -13,7 +13,7 @@
 .. code-block:: php
 
 	use Lynx\ORM\Configuration;
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\NativeArray;
 
 	$configuration = new Configuration();
 	$configuration->setCacheDriver(new NativeArray());
@@ -23,7 +23,7 @@ NativeArray
 
 .. code-block:: php
 
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\NativeArray;
 	$configuration->setCacheDriver(new NativeArray());
 
 Memcache
@@ -31,7 +31,7 @@ Memcache
 
 .. code-block:: php
 
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\Memcache;
 	$configuration->setCacheDriver(new Memcache());
 
 Memcached
@@ -39,7 +39,7 @@ Memcached
 
 .. code-block:: php
 
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\Memcached;
 	$configuration->setCacheDriver(new Memcached());
 
 
