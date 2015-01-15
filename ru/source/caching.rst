@@ -42,6 +42,13 @@ Memcached
 	use Cacher\Driver\Memcached;
 	$configuration->setCacheDriver(new Memcached());
 
+Redis
+---------
+
+.. code-block:: php
+
+	use Cacher\Driver\Redis;
+	$configuration->setCacheDriver(new Redis());
 
 
 
