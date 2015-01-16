@@ -1,7 +1,7 @@
 Caching
 =======
 
-Lynx support many cache adapter from Cache sublib.
+For cache, we use another library - ovr/cacher.
 
 How to use
 ----------
@@ -13,7 +13,7 @@ Example:
 .. code-block:: php
 
 	use Lynx\ORM\Configuration;
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\NativeArray;
 
 	$configuration = new Configuration();
 	$configuration->setCacheDriver(new NativeArray());
@@ -23,7 +23,7 @@ NativeArray
 
 .. code-block:: php
 
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\NativeArray;
 	$configuration->setCacheDriver(new NativeArray());
 
 Memcache
@@ -31,7 +31,7 @@ Memcache
 
 .. code-block:: php
 
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\NativeArray;
 	$configuration->setCacheDriver(new Memcache());
 
 Memcached
@@ -39,10 +39,13 @@ Memcached
 
 .. code-block:: php
 
-	use Lynx\Cache\NativeArray;
+	use Cacher\Driver\NativeArray;
 	$configuration->setCacheDriver(new Memcached());
+	
+Redis
+---------
 
+.. code-block:: php
 
-
-
-
+	use Cacher\Driver\Redis;
+	$configuration->setCacheDriver(new Redis());
